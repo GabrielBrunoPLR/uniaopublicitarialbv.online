@@ -1,0 +1,139 @@
+<!DOCTYPE html><html><head>
+
+  <title>Todos pelo Rio Grande do Sul</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      font-family: "Montserrat";
+
+    }
+
+    body {
+      max-width: 100vw;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navigation">
+    <a href="page.html">
+      <img src="images/logo.svg" width="" height="" alt="">
+    </a>
+
+  </nav>
+  <section class="section__wrapper">
+    <div class="intro__content">
+      <div class="text__content">
+
+        <h1>
+          Ajude o Rio<br>
+          Grande <span> do Sul</span> </h1>
+        <p>Sua contribuição pode fazer a diferença na vida de muitas pessoas. Doe agora e ajude-nos
+          a reconstruir nossas comunidades.</p>
+        <label>
+          Valor da doação
+        </label>
+        <style>
+          .myButton {
+            background-color: #017A73; /* Cor de fundo */
+            border: none; /* Remove bordas */
+            color: white; /* Cor do texto */
+            padding: 13px 20px; /* Espaçamento interno */
+            text-align: center; /* Alinhamento do texto */
+            text-decoration: none; /* Remove sublinhado */
+            display: inline-block; /* Permite controlar o tamanho */
+            font-size: 16px; /* Tamanho da fonte */
+            margin: 4px 2px; /* Margens */
+            cursor: pointer; /* Muda o cursor para um ponteiro ao passar o mouse */
+            transition-duration: 0.4s; /* Duração da transição */
+            border-radius: 12px; /* Arredonda os cantos */
+            font-family: 'Verdana'; /* Define a fonte */
+          }
+        
+          .myButton:hover {
+            background-color: #019e96; /* Cor de fundo ao passar o mouse */
+          }
+        </style>
+        
+        <p>
+          <button onclick="window.location.href='http://google.com'" class="myButton">R$10 ❤️</button>
+          <button onclick="window.location.href='http://youtube.com'" class="myButton">R$20 ❤️</button>
+          <button onclick="window.location.href='http://google.com'" class="myButton">R$50 ❤️</button>
+          <button onclick="window.location.href='http://google.com'" class="myButton">R$100 ❤️</button>
+          <button onclick="window.location.href='http://google.com'" class="myButton">R$200 ❤️</button>
+          <button onclick="window.location.href='http://google.com'" class="myButton">R$300 ❤️</button>
+          <button onclick="window.location.href='http://google.com'" class="myButton">R$500 ❤️</button>
+          <button onclick="window.location.href='http://google.com'" class="myButton">R$1000 ❤️</button>
+          <button onclick="window.location.href='http://google.com'" class="myButton">R$2000 ❤️</button>
+
+        </p>        
+                    <script>
+          document.querySelector('input').addEventListener('input', (e) => {
+            e.target.value = e.target.value.replace(/[^0-9,]/g, '');
+            let x = e.target.value.replace(/\D/g, '').match(/(\d{0,})(\d{2})/);
+            e.target.value = !x[2] ? x[1] : `${x[1]},${x[2]}`;
+          });
+
+
+        </script>
+
+
+      </div>
+      <img src="images/into.png" height="0" width="0" alt="">
+    </div>
+
+
+    
+  </section>
+  <section class="section__wrappers">
+    <div class="portfolio">
+      <div>
+        <div>
+          <label>precisamos da sua ajuda!</label>
+          <h1>Nossa história</h1>
+          <p>Cada imagem conta uma história de resistência e esperança. Junte-se a nós nesta
+            jornada de recuperação. </p>
+
+        </div>
+        <img src="images/1.png" width="" height="" alt="">
+
+      </div>
+
+      <div>
+        <img src="images/2.png" width="" height="" alt="">
+        <img src="images/3.png" width="" height="" alt="">
+        <img src="images/4.png" width="" height="" alt="">
+        <img src="images/5.png" width="" height="" alt="">
+
+      </div>
+    </div>
+
+  </section>
+  <footer class="footer">
+    <div>
+      <div class="footer__items">
+        <p style="font-size: 12px;"> Copyright © 2023 Todos os direitos reservados.</p>
+
+        <img src="images/logo.svg" width="" height="" alt="">
+
+
+      </div>
+    </div>
+  </footer>
+
+
+
+</body></html>
